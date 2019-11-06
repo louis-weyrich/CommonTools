@@ -1,0 +1,123 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+xmlns:tns="http://www.sostools.com/configuration" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Configurations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Configuration" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="Unit">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="String" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="name" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PrimitiveValue" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="name" use="required"/>
+                            <xs:attribute type="xs:string" name="type" use="required"/>
+                            <xs:attribute type="xs:string" name="value" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Unit" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="String">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="name" use="required"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="name" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="List" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:short" name="Value" maxOccurs="unbounded" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Lists can only contain PrimitiveValue</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="name" use="required"/>
+                        <xs:attribute type="xs:string" name="type" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PrimitiveValue">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="name" use="required"/>
+                      <xs:attribute type="xs:string" name="type" use="required"/>
+                      <xs:attribute type="xs:int" name="value" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="List">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="Value" maxOccurs="unbounded" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Lists can only contain PrimitiveValue</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="required"/>
+                  <xs:attribute type="xs:string" name="type" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Map">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="NamedValue" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:byte">
+                            <xs:attribute type="xs:string" name="name" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="required"/>
+                  <xs:attribute type="xs:string" name="type" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="String">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="name" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute type="xs:string" name="name" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

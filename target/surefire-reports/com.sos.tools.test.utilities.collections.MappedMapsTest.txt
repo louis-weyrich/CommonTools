@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sos.tools.test.utilities.collections.MappedMapsTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.sos.tools.test.utilities.collections.MappedMapsTest

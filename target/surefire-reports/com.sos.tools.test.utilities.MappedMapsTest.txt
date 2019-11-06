@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: com.sos.tools.test.utilities.MappedMapsTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 7, Errors: 8, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE! - in com.sos.tools.test.utilities.MappedMapsTest
+testMappedMapsIntIntIntInt(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.sos.tools.test.utilities.MappedMapsTest.testMappedMapsIntIntIntInt(MappedMapsTest.java:122)
+
+testKeySetInner(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.sos.tools.test.utilities.MappedMapsTest.testKeySetInner(MappedMapsTest.java:294)
+
+testRemoveInner(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.sos.tools.test.utilities.MappedMapsTest.testRemoveInner(MappedMapsTest.java:239)
+
+testContainsInnerKey(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.sos.tools.test.utilities.MappedMapsTest.testContainsInnerKey(MappedMapsTest.java:156)
+
+testClear(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.sos.tools.test.utilities.MappedMapsTest.testClear(MappedMapsTest.java:347)
+
+testValuesInner(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: inner values collection is null
+	at com.sos.tools.test.utilities.MappedMapsTest.testValuesInner(MappedMapsTest.java:340)
+
+testPut(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.sos.tools.test.utilities.MappedMapsTest.testPut(MappedMapsTest.java:233)
+
+testPutInner(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.sos.tools.test.utilities.MappedMapsTest.testPutInner(MappedMapsTest.java:217)
+
+testGet(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.sos.tools.test.utilities.MappedMapsTest.testGet(MappedMapsTest.java:188)
+
+testGetInner(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: values for inner get is null
+	at com.sos.tools.test.utilities.MappedMapsTest.testGetInner(MappedMapsTest.java:207)
+
+testContainsInnerValueKeyInnerKeyValue(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.sos.tools.test.utilities.MappedMapsTest.testContainsInnerValueKeyInnerKeyValue(MappedMapsTest.java:175)
+
+testRemove(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.sos.tools.test.utilities.MappedMapsTest.testRemove(MappedMapsTest.java:255)
+
+testPutAll(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.sos.tools.test.utilities.MappedMapsTest.testPutAll(MappedMapsTest.java:269)
+
+testContainsInnerValueKeyValue(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.sos.tools.test.utilities.MappedMapsTest.testContainsInnerValueKeyValue(MappedMapsTest.java:166)
+
+testValues(com.sos.tools.test.utilities.MappedMapsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at com.sos.tools.test.utilities.MappedMapsTest.testValues(MappedMapsTest.java:316)
+

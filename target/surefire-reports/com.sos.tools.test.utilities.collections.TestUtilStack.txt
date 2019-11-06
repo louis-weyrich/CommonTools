@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.sos.tools.test.utilities.collections.TestUtilStack
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in com.sos.tools.test.utilities.collections.TestUtilStack
+testPush(com.sos.tools.test.utilities.collections.TestUtilStack)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: Testing Push before: 20
+	at com.sos.tools.test.utilities.collections.TestUtilStack.testPush(TestUtilStack.java:70)
+
+testSize(com.sos.tools.test.utilities.collections.TestUtilStack)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: 
+	at com.sos.tools.test.utilities.collections.TestUtilStack.testSize(TestUtilStack.java:63)
+
