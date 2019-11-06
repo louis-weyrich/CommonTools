@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configurations>
+	<Configuration name="ThreadPoolConfig">
+		<Unit name="ThreadPoolConfig1">
+			<PrimitiveValue name="threadCount" type="integer_type" value="4" />			
+			<PrimitiveValue name="minimumThreadCount" type="integer_type" value="4" />
+			<PrimitiveValue name="maximumThreadCount" type="integer_type" value="4" />
+			<PrimitiveValue name="maxWiatTime" type="long_type" value="2000" />
+			<String name="threadPoolName">config1</String>
+			<String name="timeUnit">SECONDS</String>
+			<PrimitiveValue name="allowTimeout" type="boolean_type" value="false" />
+		</Unit>
+	</Configuration>
+</Configurations>

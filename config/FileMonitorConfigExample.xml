@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<FileMonitorConfig name="monitor1">
+	
+		<Timer>10000</Timer>		
+		
+		<Files>
+			<File>C:\\DevTools\\workspace\\tpiscan\\trunk-us\\customers\\us-common\\config\\03300817.scl</File>
+		</Files>
+		
+		<Listeners>
+			<Listener>com.wn.retail.filemonitor.Type2Listener</Listener>
+		</Listeners>
+		
+	</FileMonitorConfig>
+	
+	<FileMonitorConfig name="monitor2"> 
+		
+		<Timer>5000</Timer>
+		
+		<Folders>
+			<Folder>
+				<Location recursive="true">C:\\DevTools\\workspace\\tpiscan\\trunk-us\\customers\\us-common\\</Location>
+				<Patterns>
+					<Pattern name="xml_files" include="true">
+						<Description>include any xml file</Description>
+						<File>[a-zA-Z0-9]+.xml</File>
+					</Pattern>
+					<Pattern name="java_files" include="true">
+						<Description>include any java file</Description>
+						<File>[a-zA-Z0-9]+.java</File>
+					</Pattern>
+					<Pattern name="class_files" include="false">
+						<Description>exclude any class file</Description>
+						<File>[a-zA-Z0-9]+.class</File>
+					</Pattern>
+				</Patterns>
+			</Folder>
+		</Folders>
+		
+		<Listeners>
+			<Listener>com.wn.retail.filemonitor.Type2Listener</Listener>
+		</Listeners>
+		
+	</FileMonitorConfig>
+</config>

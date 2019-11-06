@@ -1,0 +1,87 @@
+<Configurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Configuration name="config1">
+		<Unit name="system">
+			<String name="appName">Java Operating System (JOS)</String>
+			<String name="instructions">
+				<![CDATA[<user name="louis" />]]></String>
+			<PrimitiveValue name="version" type="float_type" value="1.0" />
+			<PrimitiveValue name="safeMode" type="boolean_type" value="true" />
+			<!-- Unit name="context">
+				<String name="contextName">EJB_Context</String>
+			</Unit -->
+			<Unit name="jdbc">
+				<String name="driver">com.mysql.Driver</String>
+			</Unit>
+			<List name="years" type="integer_type">
+				<Value>2012</Value>
+				<Value>2011</Value>
+				<Value>2010</Value>
+				<Value>2009</Value>
+			</List>
+		</Unit>
+		<PrimitiveValue name="key" type="integer_type" value="103472" />
+		<List name="years" type="integer_type">
+		<!-- Lists can only contain PrimitiveValue -->
+			<Value>2012</Value>
+			<Value>2011</Value>
+			<Value>2010</Value>
+			<Value>2009</Value>
+		</List>
+		<Map name="roomSize" type="integer_type">
+			<NamedValue name="height">10</NamedValue>
+			<NamedValue name="width">20</NamedValue>
+			<NamedValue name="length">15</NamedValue>
+		</Map>
+		<Unit name="users">
+			<List name="userNameList" type="string_type">
+				<Value>lweyrich</Value>
+				<Value>atkachenko</Value>
+			</List>
+			<Map name="lweyrich" type="string_type">
+				<NamedValue name="firstName">Louis</NamedValue>
+				<NamedValue name="lastName">Weyrich</NamedValue>
+				<NamedValue name="username">lweyrich</NamedValue>
+				<NamedValue name="password">LW3yr1ch01</NamedValue>
+			</Map>
+			<Map name="atkachenko">
+				<NamedValue name="firstName">Alyona</NamedValue>
+				<NamedValue name="lastName">Weyrich</NamedValue>
+				<NamedValue name="username">atkachenko</NamedValue>
+				<NamedValue name="password">alyona@1982</NamedValue>
+			</Map>
+		</Unit>
+		<Unit name="jdbc-connection">
+			<String name="driver">com.mysql.jdbc.Driver</String>
+			<String name="url">jdbc:mysql://localhost:3306/</String>
+			<String name="userName">lweyrich</String>
+			<String name="password">lweyrich</String>
+			<PrimitiveValue name="port" type="integer_type" value="3306" />
+			<PrimitiveValue name="activate" type="boolean_type" value="true" />
+			<Unit name="secureConnection">
+				<String name="driver">com.oracle.jdbc.Driver</String>
+				<String name="url">jdbc:oracle://localhost:3306/</String>
+				<String name="userName">louisw</String>
+				<String name="password">strange1</String>
+				<PrimitiveValue name="port" type="integer_type" value="3308" />
+				<PrimitiveValue name="activate" type="boolean_type" value="false" />
+			</Unit>
+			<List name="databases" type="string_type">
+				<Value>ABMS</Value>
+				<Value>APSP</Value>
+				<Value>ACSSP</Value>
+			</List>
+			<Map name="abreviations" type="string_type">
+				<NamedValue name="TX">Texas</NamedValue>
+				<NamedValue name="AZ">Arizona</NamedValue>
+				<NamedValue name="AR">Arkansas</NamedValue>
+			</Map>
+		</Unit>
+	</Configuration>
+	
+	<Configuration name="config2">
+		<String name="test1">test</String>
+		<Unit name="test2">
+			<PrimitiveValue name="number" type="integer_type" value="12345" />
+		</Unit>
+	</Configuration>
+</Configurations>

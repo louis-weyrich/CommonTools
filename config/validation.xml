@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Validation>
+	<PrimitiveValidator type="string">
+		<Name>emailAddress</Name>
+		<pattern>^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$</pattern>
+		<minSize>6</minSize>
+		<maxSize>80</maxSize>
+		<nullable>false</nullable>
+	</PrimitiveValidator>
+	<PrimitiveValidator type="int">
+		<name>validAge</name>
+		<minValue>18</minValue>
+		<minValue>100</minValue>
+		<nullable>false</nullable>
+	</PrimitiveValidator>
+	<CustomValidator class="com.sos.entities.UserValidator">
+		<Name>employee</Name>
+		<SourceClass>com.sos.entity.User</SourceClass>
+		<nullable>true</nullable>
+		<Property name="nameMaxLength" type="int" value="emailAddress" />
+		<Property name="passwordPattern" type="string" value="validAge"/>
+	</CustomValidator>
+	
+</Validation>

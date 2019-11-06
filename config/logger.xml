@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoggerConfig>
+	<Logger classPath="com.sos." logLevel="INFO">
+		<!-- For file logger add attributes "max-size" and "max-lines" -->
+		<File location="./log/error.log" append="true" max-size="2000" size-type="SIZE" />
+		<Console class="System.out"/>
+	</Logger>
+</LoggerConfig>

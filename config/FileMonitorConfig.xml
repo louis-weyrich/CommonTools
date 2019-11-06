@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<FileMonitorConfig name="monitor1">
+	
+		<Timer>5000</Timer>		
+
+		<Folders>
+			<Folder>
+				<Location recursive="true">./config</Location>
+				<Patterns>
+					<Pattern name="xml_files" include="true"> 
+						<Description>include any xml file</Description>
+						<File>[a-zA-Z0-9_-]+.xml</File>
+					</Pattern>
+				</Patterns>
+			</Folder>
+		</Folders>
+		
+		<Listeners>
+			<Listener>com.sos.tools.filemonitor.DefaultFileChangeListener</Listener>
+		</Listeners>
+		
+	</FileMonitorConfig>
+
+</config>
