@@ -18,7 +18,7 @@ public class BinaryTree  <ID, T>
 	// the total node count
 	private int nodeCount = 0;
 	
-	// A list of Nodes by oerder inserted 
+	// A list of Nodes by order inserted 
 	private List <Node <ID, T>> insertOrder;
 	
 	// A class used to buuild new nodes

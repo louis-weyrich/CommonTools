@@ -264,29 +264,28 @@ public class UtilMap<K, V> implements Map<K, V>
 		
 		 while (first < upto && upto > 0) 
 		 {
-		        int mid = (((first == -1)?0:first) + upto) / 2;  // Compute mid point.
-		        int value = -1;
-		        if(first > -1)
-		        {
-		        	value = -(getKeyComparator().compare( object, keys[mid]));
-		        }
+			 int mid = (((first == -1)?0:first) + upto) / 2;  // Compute mid point.
+		     int value = -1;
+		     if(first > -1)
+		     {
+		        value = -(getKeyComparator().compare( object, keys[mid]));
+		     }
 		        
-		        if (value == 1) 
-		        {
-		            upto = mid;     // repeat search in bottom half.
-		        } 
-		        else if (value == -1) 
-		        {
-		            first = mid + 1;  // Repeat search in top half.
-		        } 
-		        else 
-		        {
-		            return mid;     // Found it. return position
-		        }
-		    }
+		     if (value == 1) 
+		     {
+		        upto = mid;     // repeat search in bottom half.
+		     } 
+		     else if (value == -1) 
+		     {
+		        first = mid + 1;  // Repeat search in top half.
+		     } 
+		     else 
+		     {
+		        return mid;     // Found it. return position
+		     }
+		 }
 		 
-		    return (first==-1)?0:first;    // Failed to find key
-
+		 return (first==-1)?0:first;    // Failed to find key
 	}
 
 	@SuppressWarnings("unchecked")
